@@ -575,7 +575,7 @@ $('#okButt').click(function() {
             method: "POST",
             url: "https://api.rosette.com/rest/v1/tokens",
             data: { content: "北京大学生物系主任办公室内部会议" },
-            contentType: "application/json",
+            
             beforeSend: function(xhr) {
                 xhr.setRequestHeader("Authorization", "Bearer 414571d0cc196cf34b35900ed828a1a0")
             }, success: function(data){
