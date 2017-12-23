@@ -1,3 +1,22 @@
+
+$(document).ready(function(){
+    var ua = navigator.userAgent;
+
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){
+        $('#irabLink').hide();
+    }
+    else if(/Chrome/i.test(ua))
+    {
+        $('#irabLink').show();
+    }
+    else{
+        alert("not a mobile");
+        $('#irabLink').show();
+    }
+
+});
+
+
 $('body').scrollspy({ target: '#navbar-example' });
 
 $.fn.extend({
@@ -32,7 +51,7 @@ var waypoint1 = new Waypoint({
         $('#instItems').animateCss('jello');
 
     },
-offset: "20%"
+    offset: "20%"
 });
 
 var waypoint2 = new Waypoint({
