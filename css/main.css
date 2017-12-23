@@ -656,13 +656,17 @@ p {
         top: 375px;
     }
 
+    .regBtn {
+        font-size: 1rem ! important;
+    }
+
     #contactHead {
         padding-top: 35px;
         padding-bottom: 5px;
     }
 
     .h1, h1 {
-        font-size: 1.9rem !important;
+        font-size: 1.6rem !important;
     }
 
     .smallD {
