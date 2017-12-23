@@ -648,18 +648,12 @@ p {
 
 
     #cardD {
-        z-index: 10;
-        position: absolute;
-        top: 250px;
-        opacity: 0.9;
+        top: 190px;
     }
 
 
     #cardD1 {
-        z-index: 10;
-        position: absolute;
-        top: 435px;
-        opacity: 0.9;
+        top: 375px;
     }
 
     #contactHead {
