@@ -44,7 +44,7 @@ var waypoint = new Waypoint({
     }
 });
 
-var waypoint1 = new Waypoint({
+/*var waypoint1 = new Waypoint({
     element: document.getElementById('instSect'),
     handler: function() {
 
@@ -52,7 +52,7 @@ var waypoint1 = new Waypoint({
 
     },
     offset: "20%"
-});
+});*/
 
 var waypoint2 = new Waypoint({
     element: document.getElementById('regbott'),
