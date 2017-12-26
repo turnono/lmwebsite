@@ -678,6 +678,11 @@ p {
         padding-left: 25px !important;
     }
 
+    .lastImg {
+        max-width: 30%;
+        
+    }
+
     /*div.carousel-item > img
     { height: 400px !important ;
     }*/
