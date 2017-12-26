@@ -679,7 +679,7 @@ p {
     }
 
     .lastImg {
-        max-width: 55%;
+        max-width: 53% !important;
 
     }
 
