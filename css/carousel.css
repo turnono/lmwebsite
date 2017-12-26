@@ -96,7 +96,7 @@ body {
 @media (max-width: 600px) {
 
     div.carousel-item {
-        height: 28rem;
+        height: 29rem;
     }
 
     div.carousel-item > img{
