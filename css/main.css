@@ -682,11 +682,6 @@ p {
     { height: 400px !important ;
     }*/
 
-    div.carousel-item > img{
-        max-width: 100% !important;
-        height: 100% !important;
-    }
-
 
     .header > label {
         display: inline-block;

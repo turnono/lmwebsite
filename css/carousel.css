@@ -25,8 +25,8 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    /*height: 37rem;*/
-    height: 34rem;
+
+    height: 37rem;
     background-color: #ccffcc;
 }
 .carousel-item > img {
@@ -94,6 +94,15 @@ body {
 
 
 @media (max-width: 600px) {
+
+    div.carousel-item {
+        height: 28rem;
+    }
+
+    div.carousel-item > img{
+        max-width: 100% !important;
+        height: 100% !important;
+    }
 
     .featurette-divider {
         margin: 1rem 0;
