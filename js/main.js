@@ -32,6 +32,7 @@ $.fn.extend({
     }
 });
 
+/*
 var waypoint = new Waypoint({
     element: document.getElementById('home'),
     handler: function() {
@@ -43,6 +44,7 @@ var waypoint = new Waypoint({
 
     }
 });
+*/
 
 /*var waypoint1 = new Waypoint({
     element: document.getElementById('instSect'),
