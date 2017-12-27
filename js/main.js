@@ -75,6 +75,7 @@ $('.rounded-circle').hover(function () {
     $(this).animateCss('pulse')
 });
 
+/*
 $('#myCarousel').on('slide.bs.carousel', function () {
 
     var waypoint6 = new Waypoint({
@@ -87,6 +88,6 @@ $('#myCarousel').on('slide.bs.carousel', function () {
         },
         offset: "10%"
     });
-});
+});*/
 
 
