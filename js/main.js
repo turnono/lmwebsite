@@ -45,7 +45,8 @@ var waypoint = new Waypoint({
         $('.carousel').carousel(
             'pause'
         );
-    }
+    },
+    offset: "10%"
 });
 
 
