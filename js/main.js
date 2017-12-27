@@ -88,3 +88,5 @@ $('#myCarousel').on('slide.bs.carousel', function () {
         offset: "10%"
     });
 });
+
+
