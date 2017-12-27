@@ -32,19 +32,23 @@ $.fn.extend({
     }
 });
 
-/*
+
 var waypoint = new Waypoint({
-    element: document.getElementById('home'),
+    element: document.getElementsByClassName('marketing'),
     handler: function() {
 
-        $('#cardD').animateCss('bounceInRight');
+        /*$('#cardD').animateCss('bounceInRight');
         $('.inHome').animateCss('zoomIn');
         $('#cardD1').animateCss('lightSpeedIn');
-        $('.regBtn').animateCss('flipInX');
+        $('.regBtn').animateCss('flipInX');*/
+
+        $('.carousel').carousel(
+            'pause'
+        )
 
     }
 });
-*/
+
 
 /*var waypoint1 = new Waypoint({
     element: document.getElementById('instSect'),
@@ -56,7 +60,7 @@ var waypoint = new Waypoint({
     offset: "20%"
 });*/
 
-var waypoint2 = new Waypoint({
+/*var waypoint2 = new Waypoint({
     element: document.getElementById('regbott'),
     handler: function() {
 
@@ -64,7 +68,7 @@ var waypoint2 = new Waypoint({
 
     },
     offset: "80%"
-});
+});*/
 
 
 $('.rounded-circle').hover(function () {

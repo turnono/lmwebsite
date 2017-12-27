@@ -131,11 +131,23 @@ textarea {
 }
 
 .regBtn {
-    animation-duration: 9s;
+    animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: 3;
-
 }
+
+.regBtn1 {
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 30;
+}
+
+#regbott {
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: 30;
+}
+
 
 .float-center {
     text-align: center;
@@ -155,7 +167,6 @@ textarea {
     padding-right: 10px !important;
     padding-left: 10px !important;
 }
-
 
 
 
