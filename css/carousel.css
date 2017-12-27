@@ -38,7 +38,6 @@ body {
     opacity: 0.6;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -53,7 +52,6 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
 }
-
 
 /* Featurettes
 ------------------------- */
@@ -71,7 +69,6 @@ body {
     left: 41%;
     width: 10%;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -92,7 +89,6 @@ body {
     }
 }
 
-
 @media (max-width: 600px) {
 
     div.carousel-item {
@@ -108,6 +104,4 @@ body {
         margin: 1rem 0;
     }
 }
-
-
 
