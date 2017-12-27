@@ -68,3 +68,12 @@ var waypoint2 = new Waypoint({
 $('.rounded-circle').hover(function () {
     $(this).animateCss('pulse')
 });
+
+$('#myCarousel').on('slide.bs.carousel', function () {
+
+    $('#cardD').animateCss('bounceInRight');
+    $('.inHome').animateCss('zoomIn');
+    $('#cardD1').animateCss('lightSpeedIn');
+    $('.regBtn').animateCss('flipInX');
+
+});
