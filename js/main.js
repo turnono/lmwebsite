@@ -56,7 +56,7 @@ var waypoint1 = new Waypoint({
         $('#instItems').animateCss('jello');
         $('.regBtn1').animateCss('flipInX');
     },
-    offset: "20%"
+    offset: "10%"
 });
 
 var waypoint2 = new Waypoint({
