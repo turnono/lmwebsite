@@ -108,19 +108,17 @@ textarea {
     z-index: 10;
     position: absolute;
     top: 200px;
-    animation-delay: 2s;
+
     opacity: 0.9;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+
 
 }
 
 
 .inHome {
 
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+
+
 }
 
 #homeRow {
@@ -133,35 +131,29 @@ textarea {
     z-index: 10;
     position: absolute;
     top: 327px;
-    animation-delay: 2s;
+
     opacity: 0.9;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+
 
 }
 
 .regBtn {
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-iteration-count: 3;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+
+
 }
 
 .regBtn1 {
     animation-duration: 2s !important;
     animation-delay: 1s;
     animation-iteration-count: 10;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+
 }
 
 #regbott {
     animation-duration: 2s;
     animation-delay: 1s;
     animation-iteration-count: 30;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+
 }
 
 
