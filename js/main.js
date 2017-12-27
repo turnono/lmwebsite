@@ -44,23 +44,22 @@ var waypoint = new Waypoint({
 
         $('.carousel').carousel(
             'pause'
-        )
-
+        );
     }
 });
 
 
-/*var waypoint1 = new Waypoint({
+var waypoint1 = new Waypoint({
     element: document.getElementById('instSect'),
     handler: function() {
 
         $('#instItems').animateCss('jello');
-
+        $('.regBtn1').animateCss('flipInX');
     },
     offset: "20%"
-});*/
+});
 
-/*var waypoint2 = new Waypoint({
+var waypoint2 = new Waypoint({
     element: document.getElementById('regbott'),
     handler: function() {
 
@@ -68,7 +67,7 @@ var waypoint = new Waypoint({
 
     },
     offset: "80%"
-});*/
+});
 
 
 $('.rounded-circle').hover(function () {
