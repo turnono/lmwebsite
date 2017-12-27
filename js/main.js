@@ -1,3 +1,4 @@
+/*
 
 $(document).ready(function(){
     var ua = navigator.userAgent;
@@ -37,10 +38,10 @@ var waypoint = new Waypoint({
     element: document.getElementsByClassName('noCarous'),
     handler: function() {
 
-        /*$('#cardD').animateCss('bounceInRight');
+        /!*$('#cardD').animateCss('bounceInRight');
         $('.inHome').animateCss('zoomIn');
         $('#cardD1').animateCss('lightSpeedIn');
-        $('.regBtn').animateCss('flipInX');*/
+        $('.regBtn').animateCss('flipInX');*!/
 
         $('.carousel').carousel(
             'pause'
@@ -88,3 +89,4 @@ $('#myCarousel').on('slide.bs.carousel', function () {
         offset: "10%"
     });
 });
+*/
