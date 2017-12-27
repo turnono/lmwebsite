@@ -34,7 +34,7 @@ $.fn.extend({
 
 
 var waypoint = new Waypoint({
-    element: document.getElementsByClassName('marketing'),
+    element: document.getElementsByClassName('noCarous'),
     handler: function() {
 
         /*$('#cardD').animateCss('bounceInRight');
