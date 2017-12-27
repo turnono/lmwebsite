@@ -1,4 +1,3 @@
-/*
 
 $(document).ready(function(){
     var ua = navigator.userAgent;
@@ -34,6 +33,7 @@ $.fn.extend({
 });
 
 
+/*
 var waypoint = new Waypoint({
     element: document.getElementsByClassName('noCarous'),
     handler: function() {
