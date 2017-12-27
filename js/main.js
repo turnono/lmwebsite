@@ -32,7 +32,6 @@ $.fn.extend({
     }
 });
 
-
 /*
 var waypoint = new Waypoint({
     element: document.getElementsByClassName('noCarous'),
@@ -48,7 +47,7 @@ var waypoint = new Waypoint({
         );
     },
     offset: "10%"
-});
+});*/
 
 
 var waypoint1 = new Waypoint({
@@ -81,7 +80,7 @@ $('#myCarousel').on('slide.bs.carousel', function () {
     var waypoint6 = new Waypoint({
         element: document.getElementById('home'),
         handler: function() {
-            $('#cardD').animateCss('bounceInRight');
+            $('#cardD').animateCss('bounceIn');
             $('.inHome').animateCss('zoomIn');
             $('#cardD1').animateCss('lightSpeedIn');
             $('.regBtn').animateCss('flipInX');
@@ -89,4 +88,3 @@ $('#myCarousel').on('slide.bs.carousel', function () {
         offset: "10%"
     });
 });
-*/
