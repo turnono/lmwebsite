@@ -80,9 +80,10 @@ $('#myCarousel').on('slide.bs.carousel', function () {
 
     $('#cardD').animateCss('bounceIn');
     $('#cardD1').animateCss('fadeInLeftBig');
+    $('.regBtn').animateCss('flipInX');
     /*$('.inHome').animateCss('zoomIn');
     ;
-    $('.regBtn').animateCss('flipInX');*/
+    */
 
 
 
