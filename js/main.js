@@ -79,8 +79,9 @@ $('.rounded-circle').hover(function () {
 $('#myCarousel').on('slide.bs.carousel', function () {
 
     $('#cardD').animateCss('bounceIn');
-    /*$('.inHome').animateCss('zoomIn');
     $('#cardD1').animateCss('lightSpeedIn');
+    /*$('.inHome').animateCss('zoomIn');
+    ;
     $('.regBtn').animateCss('flipInX');*/
 
 

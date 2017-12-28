@@ -108,7 +108,7 @@ textarea {
     z-index: 10;
     position: absolute;
     top: 200px;
-animation-delay: 2s;
+animation-delay: 1s;
     opacity: 0.9;
     animation-iteration-count: 1;
 
@@ -133,7 +133,9 @@ animation-delay: 2s;
     position: absolute;
     top: 327px;
 
+    animation-delay: 2s;
     opacity: 0.9;
+    animation-iteration-count: 1;
 
 
 }
