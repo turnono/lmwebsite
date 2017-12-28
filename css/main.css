@@ -771,12 +771,21 @@ p {
         padding: 15px 0px 15px 15px;
     }
 
-    #cardD1 {
-        top: 400px;
-    }
+
 
 
 }
+
+/*Ipads*/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+
+    #cardD1 {
+        top: 360px;
+        }
+    }
 
 /*social buttons*/
 
