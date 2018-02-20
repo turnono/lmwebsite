@@ -76,7 +76,7 @@
     // Your custom JavaScript goes here
 
 
-    $(document).ready(function(){
+    /*$(document).ready(function(){
         var ua = navigator.userAgent;
 
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua)){
@@ -91,7 +91,7 @@
             $('#irabLink').show();
         }
 
-    });
+    });*/
 
 
     $('body').scrollspy({ target: '#navbar-example' });
