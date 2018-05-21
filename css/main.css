@@ -124,6 +124,7 @@ textarea {
     animation-delay: 2.5s;
     opacity: 0.9;
     animation-iteration-count: 1;
+    background: mediumpurple;
 }
 
 .regBtn {
