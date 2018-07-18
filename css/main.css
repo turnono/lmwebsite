@@ -131,6 +131,10 @@ textarea {
     animation-duration: 5s;
     animation-delay: 3s;
     animation-iteration-count: 3;
+    font-size: 1rem !important;
+    border-color: lavenderblush !important;
+    border-style: outset !important;
+    border-width: 3px !important;
 }
 
 .regBtn1 {
@@ -138,6 +142,9 @@ textarea {
     animation-duration: 2s !important;
     animation-delay: 1s;
     animation-iteration-count: 10;
+    border-color: lavenderblush;
+    border-style: outset;
+    border-width: 3px;
 
 }
 
@@ -697,10 +704,6 @@ p {
 
     #cardD1 {
         /*top: 345px;*/
-    }
-
-    .regBtn {
-        font-size: 1rem !important;
     }
 
     #contactHead {
