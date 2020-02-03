@@ -1,0 +1,25 @@
+{
+    "name": "lmwebsite",
+    "version": "1.0.0",
+    "description": "Hosted at www.learningmuslim.com  The website includes the \"Iraab\" Tool, a tool to help grammatically analyze Arabic text on Chrome Desktop.  The IRAAB Tool is at www.learningmuslim.com/iraab",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/turnono/lmwebsite.git"
+    },
+    "author": "Abdullah Abrahams",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/turnono/lmwebsite/issues"
+    },
+    "homepage": "https://github.com/turnono/lmwebsite#readme",
+    "dependencies": {
+        "prettier": "^1.19.1"
+    }
+}

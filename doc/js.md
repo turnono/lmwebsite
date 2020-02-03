@@ -9,15 +9,14 @@ Information about the default JavaScript included in the project.
 
 This file can be used to contain or reference your site/app JavaScript code.
 If you're working on something more advanced you might replace this file
-entirely. That's cool. 
+entirely. That's cool.
 
 ## plugins.js
 
 This file can be used to contain all your plugins, such as jQuery plugins and
 other 3rd party scripts for a simple site.
 
-One approach is to put jQuery plugins inside of a `(function($){ ...
-})(jQuery);` closure to make sure they're in the jQuery namespace safety
+One approach is to put jQuery plugins inside of a `(function($){ ... })(jQuery);` closure to make sure they're in the jQuery namespace safety
 blanket. Read more about [jQuery plugin
 authoring](https://learn.jquery.com/plugins/#Getting_Started).
 

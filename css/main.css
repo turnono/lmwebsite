@@ -798,3 +798,22 @@ p {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
 }
+
+.regButt {
+    margin-top: 13px !important;
+    margin: 0 auto;
+    display: block !important;
+    background-color: blueviolet !important;
+    border-color: deepskyblue !important;
+}
+
+.read-more-trigger-2 {
+    position: relative !important;
+    left: 50% !important;
+    bottom: 45px !important;
+    border: 1px solid coral !important;
+}
+
+.row-new {
+    margin: 0 !important;
+}
