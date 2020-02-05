@@ -25,14 +25,14 @@
     // and that the current page is accessed from a secure origin. Using a
     // service worker from an insecure origin will trigger JS console errors. See
     // http://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features
-    var isLocalhost = Boolean(
+    const isLocalhost = Boolean(
         window.location.hostname === "localhost" ||
-            // [::1] is the IPv6 localhost address.
-            window.location.hostname === "[::1]" ||
-            // 127.0.0.1/8 is considered localhost for IPv4.
-            window.location.hostname.match(
-                /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-            )
+        // [::1] is the IPv6 localhost address.
+        window.location.hostname === "[::1]" ||
+        // 127.0.0.1/8 is considered localhost for IPv4.
+        window.location.hostname.match(
+            /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+        )
     );
 
     if (
@@ -51,7 +51,7 @@
                     if (navigator.serviceWorker.controller) {
                         // The updatefound event implies that registration.installing is set:
                         // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
-                        var installingWorker = registration.installing;
+                        const installingWorker = registration.installing;
 
                         installingWorker.onstatechange = function() {
                             switch (installingWorker.state) {
@@ -103,7 +103,7 @@
 
     $.fn.extend({
         animateCss: function(animationName, callback) {
-            var animationEnd =
+            const animationEnd =
                 "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
             this.addClass("animated " + animationName).one(
                 animationEnd,
@@ -118,19 +118,24 @@
         }
     });
 
+    // TODO: uncomment this when opening registrations again
+
     $(document).ready(function() {
         console.log("hello");
         $("#cardD").animateCss("bounceIn");
-        $("#cardD1").animateCss("fadeInLeftBig");
-        $(".regBtn").animateCss("flipInX");
+       // $("#cardD1").animateCss("fadeInLeftBig");
+        // $(".regBtn").animateCss("flipInX");
     });
 
-    var waypoint = new Waypoint({
+
+
+
+    const waypoint = new Waypoint({
         element: document.getElementById("home"),
-        handler: function() {
+        handler: function () {
             $("#cardD").animateCss("bounceIn");
-            $("#cardD1").animateCss("fadeInLeftBig");
-            $(".regBtn").animateCss("flipInX");
+            // $("#cardD1").animateCss("fadeInLeftBig");
+            // $(".regBtn").animateCss("flipInX");
 
             /*$('.carousel').carousel(
                 'pause'
@@ -139,22 +144,27 @@
         offset: "1%"
     });
 
-    var waypoint1 = new Waypoint({
-        element: document.getElementById("instSect"),
-        handler: function() {
-            $("#instItems").animateCss("jello");
-            $(".regBtn1").animateCss("flipInX");
-        },
-        offset: "10%"
-    });
 
-    var waypoint2 = new Waypoint({
-        element: document.getElementById("regbott"),
-        handler: function() {
-            $("#regbott").animateCss("headShake");
-        },
-        offset: "80%"
-    });
+
+    // const waypoint1 = new Waypoint({
+    //     element: document.getElementById("instSect"),
+    //     handler: function () {
+    //         $("#instItems").animateCss("jello");
+    //         $(".regBtn1").animateCss("flipInX");
+    //     },
+    //     offset: "10%"
+
+    // });
+
+
+
+    // const waypoint2 = new Waypoint({
+    //     element: document.getElementById("regbott"),
+    //     handler: function () {
+    //         $("#regbott").animateCss("headShake");
+    //     },
+    //     offset: "80%"
+    // });
 
     $(".rounded-circle").hover(function() {
         $(this).animateCss("pulse");

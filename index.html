@@ -230,10 +230,10 @@
                             style="background-color: goldenrod; padding: 10px !important;"
                         >
                             <div class="card-block">
-                                <h5 style="text-shadow: 1px 1px black;">
+                                <h4>
                                     Learn Arabic Online
                                     <!-- Coming Soon: Our June 2020 intake Insha'Allah. Watch this space! -->
-                                </h5>
+                                </h4>
                                 <p style="text-shadow: 1px 1px black;">
                                     Our Arabic courses offered online
                                 </p>
@@ -245,15 +245,17 @@
                                     ><strong>Learn More</strong></a
                                 >
 
-                                <a
-                                    href=""
+                                <button
+                                    type="submit"
+                                    id="btnOneRegister"
                                     class="btn btn-lg btn-primary regBtn text-white bg-primary"
+                                    data-toggle="modal"
+                                    data-target="#exampleModalCenter"
                                 >
-                                    <span
-                                        class="glyphicon glyphicon-pencil "
-                                    ></span
-                                    >Register now</a
-                                >
+                                    Register now
+                                </button>
+
+
                             </div>
                         </div>
                         <div style="margin: 4%"></div>
@@ -474,15 +476,22 @@
                                     </h6>
                                 </div>
                                 <div class="card-footer">
-                                    <a
-                                        href="https://adminonline.biz/AdminOnline/registration.jsp?cid=716&cdesc=Learning%20Muslim"
-                                        class="btn btn-lg btn-primary regBtn1"
-                                        style="padding: 0 .25rem !important;"
-                                        ><span
-                                            class="glyphicon glyphicon-pencil"
-                                        ></span
-                                        >Register now</a
+<!--                                    <a-->
+<!--                                        href="https://adminonline.biz/AdminOnline/registration.jsp?cid=716&cdesc=Learning%20Muslim"-->
+<!--                                        class="btn btn-lg btn-primary regBtn1"-->
+<!--                                        style="padding: 0 .25rem !important;"-->
+<!--                                        ><span-->
+<!--                                            class="glyphicon glyphicon-pencil"-->
+<!--                                        ></span-->
+<!--                                        >Register now</a-->
+<!--                                    >-->
+                                    <p
+                                        style="margin-bottom: 0; margin-top: 0;padding-top: 10px; color: tomato"
                                     >
+                                        Registrations are closed for our current intake.
+                                        The next intake will be in July 2020
+                                        Inshaa'Allah.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1463,6 +1472,125 @@
             </footer>
         </main>
 
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            REGISTRATION
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>
+                            Course: An introduction to Arabic for students of
+                            the Quraan.
+                        </h6>
+
+                        <p>
+                            Please complete your payment to register. On payment
+                            you will receive immediate access to the course!
+                            Make sure you check your email after registration
+                            for instructions on how to join Google Classroom.
+                        </p>
+
+                        <form
+                            action="https://www.payfast.co.za/eng/process"
+                            name="form_70dd41e8ca6019dfd8548ed1061fc7cc"
+                            onsubmit="return click_70dd41e8ca6019dfd8548ed1061fc7cc( this );"
+                            method="post"
+                        >
+                            <!--                            <div class="form-group">-->
+                            <!--                                <label for="name">Full Name</label>-->
+                            <!--
+                                           <input type="text" class="form-control" id="name" placeholder="Full name">-->
+                            <!--                            </div>-->
+                            <!--                            <div class="form-group">-->
+                            <!--                                <label for="email">Email address</label>-->
+                            <!--                                <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">-->
+                            <!--                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                            <!--                            </div>-->
+
+                            <input type="hidden" name="cmd" value="_paynow" />
+                            <input
+                                type="hidden"
+                                name="receiver"
+                                value="15014549"
+                            />
+                            <input
+                                type="hidden"
+                                name="item_name"
+                                value="Online Course - An introduction to Arabic for students of the Quraan"
+                            />
+                            <input
+                                type="hidden"
+                                name="amount"
+                                value="2500.00"
+                            />
+                            <input
+                                type="hidden"
+                                name="item_description"
+                                value=""
+                            />
+                            <input
+                                type="hidden"
+                                name="return_url"
+                                value="https://www.learningmuslim.com/reg-success"
+                            />
+                            <input
+                                type="hidden"
+                                name="cancel_url"
+                                value="https://www.learningmuslim.com/online-info.html"
+                            />
+
+                            <button
+                                class="btn btn-primary"
+                                style="width: 100%"
+                                src="https://www.payfast.co.za/images/buttons/light-small-paynow.png"
+                                type="submit"
+                            >
+                                Register and Pay Now with PayFast
+                                <!--                            <img src="https://www.payfast.co.za/images/buttons/light-small-paynow.png">-->
+                            </button>
+                        </form>
+                    </div>
+                    <!--                    <div class="modal-footer">-->
+                    <!--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+            function click_70dd41e8ca6019dfd8548ed1061fc7cc(aform_reference) {
+                const aForm = aform_reference;
+
+                aForm["amount"].value =
+                    Math.round(aform["amount"].value * Math.pow(10, 2)) /
+                    Math.pow(10, 2);
+
+            }
+
+        </script>
+
         <!-- Bootstrap core JavaScript
 ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -1536,10 +1664,6 @@
             })();
         </script>
         <!-- End of Magnify Widget Snippet -->
-
-
-
-
 
     </body>
 </html>
