@@ -13,12 +13,13 @@
         <!--    <link rel="manifest" href="site.webmanifest">-->
         <link rel="apple-touch-icon" href="assets/img/favicons/favicon.ico" />
 
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
-        <meta name="author" content="" />
-
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
         <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -28,6 +29,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         />
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <meta name="author" content="" />
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="css/carousel.css" />
@@ -146,7 +151,7 @@
         <main role="main">
             <div class="container marketing noCarous">
                 <section>
-                    <h1 style="text-align: center; padding-bottom: 20px;">
+                    <h1 style="text-align: center;">
                         Learning Muslim Online Courses
                     </h1>
                     <div class="row featurette">
@@ -158,26 +163,34 @@
                                 <div class="card-block">
                                     <h3
                                         class="card-title"
-                                        style="font-size: 1.3rem;"
+                                        style="font-size: 1.3rem; text-align: center"
                                     >
                                         An introduction to Arabic for students
                                         of the Quraan
                                     </h3>
 
                                     <div>
-                                        Build a practical foundation in Grammar
-                                        And Morphology to fast track your
-                                        journey into the Quran via it's original
-                                        language. This course is designed for
-                                        anyone having the basic ability to read
-                                        the Qur'aan and would like to embark on
-                                        the next step of understanding what they
-                                        are reading.
+                                        Build a practical foundation in
+                                        <strong>Grammar</strong> And
+                                        <strong>Morphology</strong> to fast
+                                        track your journey into the Quran via
+                                        it's original language. This course is
+                                        designed for anyone having the basic
+                                        ability to read the Qur'aan and would
+                                        like to embark on the next step of
+                                        understanding what they are reading.
+                                        <p style="margin-bottom: 0">
+                                            Our course is designed to maximise
+                                            the understanding of core concepts
+                                            in the shortest time possible.
+                                        </p>
 
                                         <button
                                             type="submit"
                                             id="btnOneRegister"
                                             class="regButt btn btn-sm btn-success"
+                                            data-toggle="modal"
+                                            data-target="#exampleModalCenter"
                                         >
                                             Register today and get immediate
                                             access!
@@ -186,62 +199,177 @@
 
                                     <br />
                                     <h5>Course Details</h5>
-                                    <p></p>
 
                                     <div>
-                                        This course includes 30 lessons, each
-                                        comprising of 3 components; Nahw
-                                        (Grammar), Sarf (Morphology) and an
-                                        Arabic reader. Each component includes
-                                        an audio/visual aspect followed by a
-                                        graded exercise. This course is
-                                        facilitated by three of our Teachers.
-                                        This syllabus is designed to maximise
-                                        the understanding of core concepts in
-                                        the shortest time possible.
+                                        <label style="margin: 0"
+                                            ><strong
+                                                >Pre-Requisite:</strong
+                                            ></label
+                                        >
+                                        <p style="margin-bottom: 2px;">
+                                            The applicant must be able to recite
+                                            the Qur’an in Arabic. No prior
+                                            knowledge of Arabic is required.
+                                        </p>
                                     </div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
 
                                     <div>
-                                        Duration: 1 month mininum but students
-                                        have lifetime access, so you may
-                                        complete it at your own pace.
+                                        <label style="margin: 0"
+                                            ><strong>Outline: </strong></label
+                                        >
+                                        <p style="margin-bottom: 0;">
+                                            This course includes 30 lessons each
+                                            comprising of 3 components:
+                                        </p>
+                                        <div
+                                            style="margin-left: 15px;"
+                                        >
+                                            <li>
+                                                Nahw (Grammar)
+                                            </li>
+                                            <li>
+                                                Sarf (Morphology)
+                                            </li>
+                                            <li>
+                                                An Arabic reader
+                                            </li>
+                                        </div>
                                     </div>
-                                    <div>Start Date: Today</div>
                                     <div>
-                                        Material: Pdf copies of our books,
-                                        access to our PPT slides, access to our
-                                        online homework web-app.
+                                        <label style="margin: 0"
+                                            ><strong>Format:</strong></label
+                                        >
+                                        <p style="margin-bottom: 2px;">
+                                            Each component includes an
+                                            audio/visual aspect followed by a
+                                            graded exercise.
+                                        </p>
                                     </div>
-                                    <div>End Date: work at your own pace!</div>
-                                    <div>Platform: Google Classroom</div>
                                     <div>
-                                        Skill: beginners having the ability to
-                                        read Quraan as well as advanced
+                                        <label style="margin: 0"
+                                            ><strong
+                                                >Facilitators:</strong
+                                            ></label
+                                        >
+                                        <div style="margin-left: 15px;">
+                                            <li>
+                                                ML Abdullah Abrahams
+                                            </li>
+                                            <li>
+                                                ML Bilal Nicholson
+                                            </li>
+                                            <li>
+                                                ML Abdur Rahman Laily
+                                            </li>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label style="margin: 0"
+                                            ><strong>Duration:</strong></label
+                                        >
+                                        <p style="margin-bottom: 2px;">
+                                            1 month mininum but students have
+                                            lifetime access, so you may complete
+                                            it at your own pace.
+                                        </p>
                                     </div>
                                     <div>
-                                        Cost: R2500, includes course material
+                                        <label style="margin-bottom: 2px;"
+                                            ><strong>Start Date:</strong></label
+                                        >
+
+                                            Today
+
                                     </div>
-                                    <div>Language: English</div>
                                     <div>
-                                        Facilators: Ml Bilal, Ml Abdur rahman,
-                                        Ml Abdullah
+                                        <label style="margin: 0">
+                                            <strong>Material: </strong></label
+                                        >
+                                        <div style="margin-left: 15px;">
+                                            <li>
+                                                Pdf copies of our textbooks
+                                            </li>
+                                            <li>
+                                                Access to
+                                                our PowerPoint slides
+                                            </li>
+                                            <li>
+                                                Access to all our videos and audios
+                                            </li>
+                                            <li>
+                                                Access to our <a href="iiraab.com">
+                                                homework web-app</a>
+                                            </li>
+                                        </div>
+
                                     </div>
-                                    <div>Certification: Yes</div>
+                                    <div>
+                                        <label style="margin-bottom: 2px;"
+                                            ><strong>End Date:</strong></label
+                                        >
+
+                                            Work at your own pace!
+
+                                    </div>
+                                    <div>
+                                        <label style="margin-bottom: 2px;"
+                                            ><strong>Platform:</strong>
+                                        </label>
+
+                                            Google Classroom
+
+                                    </div>
+<!--                                    <div>-->
+<!--                                        <label style="margin: 0"-->
+<!--                                            ><strong>Skill:</strong>-->
+<!--                                        </label>-->
+<!--                                        <p style="margin-bottom: 0.5rem;">-->
+<!--                                            beginners having the ability to read-->
+<!--                                            Quraan as well as advanced-->
+<!--                                        </p>-->
+<!--                                    </div>-->
+                                    <div>
+                                        <label style="margin-bottom: 2px;"
+                                            ><strong>Cost:</strong></label
+                                        >
+
+                                            R2000, includes course material
+
+                                    </div>
+                                    <div>
+                                        <label style="margin-bottom: 2px;"
+                                            ><strong>Instruction Language: </strong></label
+                                        >
+
+                                            English
+
+                                    </div>
+
+                                    <div>
+                                        <label style="margin-bottom: 2px;"
+                                            ><strong
+                                                >Certification:</strong
+                                            ></label
+                                        >
+
+                                            Yes
+
+                                    </div>
                                     <br />
                                     <h5>How can I join the program?</h5>
 
-                                    This program is specifically for people who
-                                    want to understand Arabic as it relates to
+                                    This program is for anyone who
+                                    wants to understand Arabic as it relates to
                                     the Quran and the Islamic legacy.
 
                                     <button
                                         type="submit"
-                                        id="btnContactUs"
                                         style="margin-bottom: 1rem"
-                                        class="btn btn-sm btn-success regButt"
+                                        id="btnTwoRegister"
+                                        class="regButt btn btn-sm btn-success"
+                                        data-toggle="modal"
+                                        data-target="#exampleModalCenter"
                                     >
                                         <span
                                             class="glyphicon glyphicon-envelope "
@@ -252,8 +380,8 @@
                                     <p
                                         style="text-align: center; color: orangered"
                                     >
-                                        This is a fully online course! Login and
-                                        complete assignments whenever you wish!
+                                        This is a fully online course!
+                                        Complete assignments whenever you wish!
                                         No mandatory live sessions to attend!
                                     </p>
                                 </div>
@@ -303,6 +431,8 @@
                                             type="button"
                                             id="waitListBtn"
                                             class="btn btn-sm btn-success"
+                                            data-toggle="modal"
+                                            data-target="#waitListCenter"
                                         >
                                             Join wait list
                                         </button>
@@ -325,5 +455,278 @@
                 </p>
             </footer>
         </main>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            REGISTRATION
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>
+                            Course: An introduction to Arabic for students of
+                            the Quraan.
+                        </h6>
+
+                        <p>
+                            Please complete your payment to register. On payment
+                            you will receive immediate access to the course!
+                            Make sure you check your email after registration
+                            for instructions on how to join Google Classroom.
+                        </p>
+
+                        <form
+                            action="https://www.payfast.co.za/eng/process"
+                            name="form_70dd41e8ca6019dfd8548ed1061fc7cc"
+                            onsubmit="return click_70dd41e8ca6019dfd8548ed1061fc7cc( this );"
+                            method="post"
+                        >
+                            <!--                            <div class="form-group">-->
+                            <!--                                <label for="name">Full Name</label>-->
+                            <!--                                <input type="text" class="form-control" id="name" placeholder="Full name">-->
+                            <!--                            </div>-->
+                            <!--                            <div class="form-group">-->
+                            <!--                                <label for="email">Email address</label>-->
+                            <!--                                <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">-->
+                            <!--                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                            <!--                            </div>-->
+
+                            <input type="hidden" name="cmd" value="_paynow" />
+                            <input
+                                type="hidden"
+                                name="receiver"
+                                value="15014549"
+                            />
+                            <input
+                                type="hidden"
+                                name="item_name"
+                                value="Online Course - An introduction to Arabic for students of the Quraan"
+                            />
+                            <input
+                                type="hidden"
+                                name="amount"
+                                value="2500.00"
+                            />
+                            <input
+                                type="hidden"
+                                name="item_description"
+                                value=""
+                            />
+                            <input
+                                type="hidden"
+                                name="return_url"
+                                value="https://www.learningmuslim.com/reg-success"
+                            />
+                            <input
+                                type="hidden"
+                                name="cancel_url"
+                                value="https://www.learningmuslim.com/online-info.html"
+                            />
+
+                            <button
+                                class="btn btn-primary"
+                                style="width: 100%"
+                                src="https://www.payfast.co.za/images/buttons/light-small-paynow.png"
+                                type="submit"
+                            >
+                                Register and Pay Now with PayFast
+                                <!--                            <img src="https://www.payfast.co.za/images/buttons/light-small-paynow.png">-->
+                            </button>
+                        </form>
+                    </div>
+                    <!--                    <div class="modal-footer">-->
+                    <!--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Wait List -->
+        <div
+            class="modal fade"
+            id="waitListCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="waitListCenter"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Course Wait List
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Add your name to the wait list and we will notify
+                            you when new courses become available!
+                        </p>
+
+                        <form id="waitListForm" class="needs-validation">
+                            <div class="form-group">
+                                <label for="inputEmail1">Email address</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="inputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter email"
+                                    name="email"
+                                    required
+                                />
+                                <small
+                                    id="emailHelp"
+                                    class="form-text text-muted"
+                                    >Privacy Policy: We hate spam and promise to
+                                    keep your email address safe.</small
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="nameInput2">First Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nameInput2"
+                                    placeholder="First Name"
+                                    name="name"
+                                    required
+                                />
+                            </div>
+                            <button type="button" class="btn btn-primary">
+                                Add me!
+                            </button>
+                        </form>
+                    </div>
+                    <!--                    <div class="modal-footer">-->
+                    <!--                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyCgU3QcyeccPaT2l0UjMBljYNrAgNIishE",
+                authDomain: "learning-muslim.firebaseapp.com",
+                databaseURL: "https://learning-muslim.firebaseio.com",
+                projectId: "learning-muslim",
+                storageBucket: "learning-muslim.appspot.com",
+                messagingSenderId: "1081178276469",
+                appId: "1:1081178276469:web:2f71be4aae5ede5db5ae3c",
+                measurementId: "G-YWV6LZH0HV"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            const db = firebase.firestore();
+
+            (function() {
+                "use strict";
+
+                // Fetch the form we want to apply custom Bootstrap validation styles to
+                const form = document.getElementById("waitListForm");
+
+                form.addEventListener(
+                    "click",
+                    function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+                            const data = {
+                                name: form["name"].value,
+                                email: form["email"].value
+                            };
+
+                            db.collection("wait-list")
+                                .add(data)
+                                .then(function(docRef) {
+                                    console.log(
+                                        "Document written with ID: ",
+                                        docRef.id
+                                    );
+                                    $("#waitListCenter").modal("hide");
+                                })
+                                .catch(function(error) {
+                                    console.error(
+                                        "Error adding document: ",
+                                        error
+                                    );
+                                    $("#waitListCenter").modal("hide");
+                                });
+                        }
+
+                        form.classList.add("was-validated");
+                    },
+                    false
+                );
+            })();
+
+            function click_70dd41e8ca6019dfd8548ed1061fc7cc(aform_reference) {
+                const aForm = aform_reference;
+
+                aForm["amount"].value =
+                    Math.round(aform["amount"].value * Math.pow(10, 2)) /
+                    Math.pow(10, 2);
+            }
+        </script>
     </body>
 </html>

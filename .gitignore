@@ -5,3 +5,5 @@
 
 /form_action.php
 .history/
+node_modules
+./node_modules

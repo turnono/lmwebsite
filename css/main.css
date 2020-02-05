@@ -9,6 +9,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+/* import the fonts needed */
+
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+@import url("http://fonts.googleapis.com/css?family=Cookie");
 @import url(
     https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,
     200,
@@ -23,10 +28,6 @@
     900,
     900italic
 );
-
-/* import the fonts needed */
-@import url("http://fonts.googleapis.com/css?family=Cookie");
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 html {
     color: #222;
