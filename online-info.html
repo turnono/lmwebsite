@@ -36,6 +36,8 @@
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="css/carousel.css" />
+
+
     </head>
     <body>
         <br />
@@ -338,7 +340,6 @@
                                                 >Instruction Language:
                                             </strong></label
                                         >
-
                                         English
                                     </div>
 
@@ -533,7 +534,11 @@
                                 name="item_name"
                                 value="Online Course - An introduction to Arabic for students of the Quraan"
                             />
-                            <input type="hidden" name="amount" value="2000.00" />
+                            <input
+                                type="hidden"
+                                name="amount"
+                                value="2000.00"
+                            />
                             <input
                                 type="hidden"
                                 name="item_description"
@@ -658,6 +663,7 @@
             crossorigin="anonymous"
         ></script>
 
+
         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
         <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -669,73 +675,8 @@
         <!-- Add Firebase products that you want to use -->
         <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-performance.js"></script>
 
-        <script>
-            // Your web app's Firebase configuration
-            const firebaseConfig = {
-                apiKey: "AIzaSyCgU3QcyeccPaT2l0UjMBljYNrAgNIishE",
-                authDomain: "learning-muslim.firebaseapp.com",
-                databaseURL: "https://learning-muslim.firebaseio.com",
-                projectId: "learning-muslim",
-                storageBucket: "learning-muslim.appspot.com",
-                messagingSenderId: "1081178276469",
-                appId: "1:1081178276469:web:2f71be4aae5ede5db5ae3c",
-                measurementId: "G-YWV6LZH0HV"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-
-            const db = firebase.firestore();
-
-            (function() {
-                "use strict";
-
-                // Fetch the form we want to apply custom Bootstrap validation styles to
-                const form = document.getElementById("waitListForm");
-
-                form.addEventListener(
-                    "click",
-                    function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        } else {
-                            const data = {
-                                name: form["name"].value,
-                                email: form["email"].value
-                            };
-
-                            db.collection("wait-list")
-                                .add(data)
-                                .then(function(docRef) {
-                                    console.log(
-                                        "Document written with ID: ",
-                                        docRef.id
-                                    );
-                                    $("#waitListCenter").modal("hide");
-                                })
-                                .catch(function(error) {
-                                    console.error(
-                                        "Error adding document: ",
-                                        error
-                                    );
-                                    $("#waitListCenter").modal("hide");
-                                });
-                        }
-
-                        form.classList.add("was-validated");
-                    },
-                    false
-                );
-
-            })();
-
-            function click_70dd41e8ca6019dfd8548ed1061fc7cc(aform_reference) {
-                const aForm = aform_reference;
-                aForm["amount"].value =
-                    Math.round(aform["amount"].value * Math.pow(10, 2)) /
-                    Math.pow(10, 2);
-            }
-        </script>
+        <script src="js/fire.js"></script>
     </body>
 </html>

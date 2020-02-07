@@ -2,6 +2,69 @@
 <html class="no-js" lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
+
+        <script type="text/javascript">
+            !(function(n, e) {
+                var t,
+                    o,
+                    i,
+                    c = [],
+                    f = { passive: !0, capture: !0 },
+                    r = new Date(),
+                    a = "pointerup",
+                    u = "pointercancel";
+                function p(n, c) {
+                    t || ((t = c), (o = n), (i = new Date()), w(e), s());
+                }
+                function s() {
+                    o >= 0 &&
+                    o < i - r &&
+                    (c.forEach(function(n) {
+                        n(o, t);
+                    }),
+                        (c = []));
+                }
+                function l(t) {
+                    if (t.cancelable) {
+                        var o =
+                            (t.timeStamp > 1e12
+                                ? new Date()
+                                : performance.now()) - t.timeStamp;
+                        "pointerdown" == t.type
+                            ? (function(t, o) {
+                                function i() {
+                                    p(t, o), r();
+                                }
+                                function c() {
+                                    r();
+                                }
+                                function r() {
+                                    e(a, i, f), e(u, c, f);
+                                }
+                                n(a, i, f), n(u, c, f);
+                            })(o, t)
+                            : p(o, t);
+                    }
+                }
+                function w(n) {
+                    [
+                        "click",
+                        "mousedown",
+                        "keydown",
+                        "touchstart",
+                        "pointerdown"
+                    ].forEach(function(e) {
+                        n(e, l, f);
+                    });
+                }
+                w(n),
+                    (self.perfMetrics = self.perfMetrics || {}),
+                    (self.perfMetrics.onFirstInputDelay = function(n) {
+                        c.push(n), s();
+                    });
+            })(addEventListener, removeEventListener);
+        </script>
+
         <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-79615209-1"
@@ -1618,6 +1681,21 @@
 
         <script src="https://apis.google.com/js/platform.js"></script>
 
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-performance.js"></script>
+
+        <script src="js/fire.js"></script>
+
         <script type="text/javascript">
             window._mfq = window._mfq || [];
             (function() {
@@ -1629,18 +1707,6 @@
                 document.getElementsByTagName("head")[0].appendChild(mf);
             })();
         </script>
-
-        <!-- <script type="text/javascript">
-        window._urq = window._urq || [];
-        _urq.push(['setGACode', 'UA-79615209-1']);
-        _urq.push(['initSite', 'a3277f38-4ce2-4227-8f0a-d3a770785cb7']);
-
-        (function () {
-            var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
-            ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
-        })();
-    </script> -->
 
         <!-- Start of Magnify Widget Snippet -->
         <script>
