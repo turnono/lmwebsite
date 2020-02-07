@@ -7,3 +7,9 @@
 .history/
 node_modules
 ./node_modules
+
+assets/img/.DS_Store
+
+assets/.DS_Store
+
+*.log
